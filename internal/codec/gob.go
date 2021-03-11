@@ -19,6 +19,7 @@ type GobCodec struct {
 //var _ Codec = (*GobCodec)(nil)
 
 func NewGobCodec(conn io.ReadWriteCloser) *GobCodec {
+	// TODO: goroutine-per-connection, buffer goroutine safe?
 	b := bufio.NewWriter(conn)
 	return &GobCodec{
 		conn:    conn,
