@@ -10,7 +10,9 @@ import (
 	"sync"
 )
 
-type Server struct{}
+type Server struct {
+	serviceMap sync.Map
+}
 
 func NewServer() *Server {
 	return &Server{}

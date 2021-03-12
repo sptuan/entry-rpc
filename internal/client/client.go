@@ -72,7 +72,7 @@ func (client *Client) Receive() {
 			call.done()
 		}
 	}
-	client.terminateCalls(err)
+	client.TerminateCalls(err)
 }
 
 func NewClient(conn net.Conn, opt *common.Options) (*Client, error) {

@@ -36,7 +36,7 @@ func (client *Client) RemoveCall(seq uint64) *Call {
 	return call
 }
 
-func (client *Client) terminateCalls(err error) {
+func (client *Client) TerminateCalls(err error) {
 	client.sending.Lock()
 	defer client.sending.Unlock()
 	client.mu.Lock()
