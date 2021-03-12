@@ -1,6 +1,6 @@
 package server // Register publishes in the server the set of methods of the
 import (
-	"entry-rpc/internal/service"
+	"entry-rpc/pkg/service"
 	"errors"
 )
 

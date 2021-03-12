@@ -1,10 +1,13 @@
 package erpc
 
 import (
-	"entry-rpc/internal/client"
-	"entry-rpc/internal/server"
+	"entry-rpc/pkg/client"
+	"entry-rpc/pkg/server"
 	"net"
 )
+
+type Clt = client.Client
+type Srv = server.Server
 
 func Register(rcvr interface{}) error {
 	return server.Register(rcvr)

@@ -1,7 +1,7 @@
 package server
 
 import (
-	"entry-rpc/internal/service"
+	"entry-rpc/pkg/service"
 	"errors"
 	"strings"
 )

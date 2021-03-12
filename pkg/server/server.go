@@ -2,8 +2,8 @@ package server
 
 import (
 	"encoding/json"
-	"entry-rpc/internal/codec"
-	"entry-rpc/internal/common"
+	"entry-rpc/pkg/codec"
+	"entry-rpc/pkg/common"
 	"io"
 	"log"
 	"net"

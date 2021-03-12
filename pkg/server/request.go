@@ -1,8 +1,8 @@
 package server
 
 import (
-	"entry-rpc/internal/codec"
-	"entry-rpc/internal/service"
+	"entry-rpc/pkg/codec"
+	"entry-rpc/pkg/service"
 	"io"
 	"log"
 	"reflect"

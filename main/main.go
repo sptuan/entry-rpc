@@ -1,8 +1,8 @@
 package main
 
 import (
-	"entry-rpc/internal/client"
-	"entry-rpc/internal/server"
+	"entry-rpc/pkg/client"
+	"entry-rpc/pkg/server"
 	"log"
 	"net"
 	"sync"

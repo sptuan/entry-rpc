@@ -2,8 +2,8 @@ package client
 
 import (
 	"encoding/json"
-	"entry-rpc/internal/codec"
-	"entry-rpc/internal/common"
+	"entry-rpc/pkg/codec"
+	"entry-rpc/pkg/common"
 	"errors"
 	"fmt"
 	"io"
@@ -59,7 +59,7 @@ func (client *Client) Receive() {
 			// maybe server has process the request
 			err = client.cc.ReadBody(nil)
 		case h.Err != "":
-			// get a error internal rpc
+			// get a error pkg rpc
 			call.Error = fmt.Errorf(h.Err)
 			err = client.cc.ReadBody(nil)
 			call.done()
